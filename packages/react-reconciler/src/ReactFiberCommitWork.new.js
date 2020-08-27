@@ -339,7 +339,7 @@ function commitHookEffectListUnmount(
         const destroy = effect.destroy;
         effect.destroy = undefined;
         if (destroy !== undefined) {
-          safelyCallDestroy(finishedWork, nearestMountedAncestor, destroy);
+          safelyCallDestroy(finishedWork, nearestMountedAncestor, destroy); // hey
         }
       }
       effect = effect.next;
